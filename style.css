@@ -1,11 +1,10 @@
 @font-face {
-    font-family: Norse Bold;
+    font-family: Norse;
+    font-weight: bold;
     src: url(assets/Norse-Bold.otf);
 }
 
 body {
-    background-color: rgb(33, 33, 33);
-    color: white;
     display: flex;
     height: 100vh;
     margin: 0;
@@ -13,14 +12,22 @@ body {
 }
 
 .left {    
-    width: 30%;
+    min-width: 30%;
     background-image: url(assets/background.jpg);
     background-size: cover;
     position: relative;
+    color: white;
 }
 
 #logo {
-    font-family: Norse Bold, sans-serif: 
+    font-size: 6rem;
+    font-family: Norse, sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
 }
 
 #cred {
@@ -29,11 +36,22 @@ body {
     right: 175px;
 }
 
+#cred span {
+    text-decoration: underline;
+}
+
 .right {
     display: flex;
     flex-direction: column;
+    font-family: Arial;
+    font-weight: 600;
 }
 
 .right > div {
     flex: 1;
+}
+
+#top {
+    font-size: 1.5rem;
+    padding: 150px 150px 0 60px;
 }
