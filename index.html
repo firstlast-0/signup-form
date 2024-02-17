@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
 </head>
 <body>
     <div class="left">
@@ -24,29 +25,42 @@
             You <i>know</i> you want to.
         </div>
 
-        <div>            
+        <div id="mid">            
             <form action="">
                 <fieldset>
                     <legend>Let's do this!</legend>
-                    <label for="fname">FIRST NAME</label>
-                    <input name="fname" id="fname">
-                    <label for="lname">LAST NAME</label>
-                    <input name="lname" id="lname">
-                    <br><br>
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
-                    <br><br>
-                    <label for="pass">PASSWORD</label>
-                    <input type="password" name="pass" id="pass">
-                    <label for="cpass">CONFIRM PASSWORD</label>
-                    <input type="password" name="cpass" id="cpass">
+                    <p>
+                        <label for="fname">FIRST NAME</label>
+                        <input name="fname" id="fname">
+                    </p>
+                    <p>
+                        <label for="lname">LAST NAME</label>
+                        <input name="lname" id="lname">
+                    </p>
+                    <br>
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                    </p>
+                    <br>
+                    <p>
+                        <label for="pass">PASSWORD</label>
+                        <input type="password" class="error" name="pass" id="pass">
+                        <span id="msg"></span>
+                    </p>
+                    <p>
+                        <label for="cpass">CONFIRM PASSWORD</label>
+                        <input type="password" class="error" name="cpass" id="cpass">                        
+                    </p>
                 </fieldset>
             </form>
         </div>
 
-        <div>
+        <div id="bot">
             <button>Create Account</button>
             Already have an account? Log in
         </div>

@@ -48,10 +48,76 @@ body {
 }
 
 .right > div {
-    flex: 1;
+    flex-grow: 1;
 }
 
 #top {
-    font-size: 1.5rem;
     padding: 150px 150px 0 60px;
+    max-height: 190px;
+}
+
+#top, #bot {
+    background-color: rgb(250, 250, 250);
+}
+
+#mid {
+    max-height: 270px;
+}
+
+#mid, #bot {
+    padding: 20px 0 0 60px;
+}
+
+fieldset {
+    border: 0;
+    padding-top: 20px;
+}
+
+#top, legend {
+    font-size: 1.5rem;
+}
+
+p {
+    position: relative;
+    display: inline-block;
+}
+
+p:nth-child(3n + 3) {
+    margin-left: 60px;
+}
+
+label {
+    font-size: .75rem;
+    letter-spacing: 2px;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+input {
+    height: 20px;
+    width: 250px;
+    font-size: .9rem;
+    padding: 2px 8px;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 5px gray;
+}
+
+.error {
+    border-color: red;
+}
+
+#msg {
+    color: darkred;
+    font-size: .75rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
 }
