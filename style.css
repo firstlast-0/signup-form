@@ -36,8 +36,8 @@ body {
     right: 175px;
 }
 
-#cred span {
-    text-decoration: underline;
+#cred a {
+    color: white;
 }
 
 .right {
@@ -61,7 +61,8 @@ body {
 }
 
 #mid {
-    max-height: 270px;
+    max-height: 250px;
+    border-bottom: 5px solid rgb(222, 220, 220);
 }
 
 #mid, #bot {
@@ -120,4 +121,32 @@ input:focus {
     position: absolute;
     bottom: -15px;
     left: 0;
+}
+
+#bot {
+    padding-top: 30px;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    padding: 13px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 2px 5px gray;
+}
+
+button:active {
+    background-color: #789360;
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px gray inset;
+}
+
+#bot a {
+    color: #596D48;
+    text-decoration: none;
 }

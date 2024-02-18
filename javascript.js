@@ -18,5 +18,5 @@ function checkField() {
     }
 }
 checkField();
-pass.addEventListener('change', checkField);
-cpass.addEventListener('change', checkField);
+pass.addEventListener('input', checkField);
+cpass.addEventListener('input', checkField);
